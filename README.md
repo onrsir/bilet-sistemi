@@ -10,7 +10,7 @@ Bu proje, Konser-Parti Bilet Sistemi için modern bir arayüz eklemek üzere gü
 <img width="891" alt="Ekran Resmi 2025-03-02 14 08 22" src="https://github.com/user-attachments/assets/abbed3ac-ffcf-42c8-b6a2-5d3069c741cc" />
 
 ### Bilet Görüntüleme
-]<img width="232" alt="Ekran Resmi 2025-03-02 14 10 55" src="https://github.com/user-attachments/assets/a8c2ee7a-736b-4ee7-98d0-7e1e3300fcd3" />
+<img src="https://github.com/user-attachments/assets/a8c2ee7a-736b-4ee7-98d0-7e1e3300fcd3" alt="Bilet Görüntülemesi" width="232" align="middle">
 
 
 
