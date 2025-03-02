@@ -1,0 +1,39 @@
+/* QR Tarayıcı Ek Stilleri */
+.scanner-overlay {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 10;
+}
+
+.error-message {
+  padding: 20px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  color: #721c24;
+  text-align: center;
+}
+
+#status-icon.processing {
+  color: #ffc107;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+#reader {
+  position: relative;
+  min-height: 300px;
+} 

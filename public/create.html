@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilet Oluştur - Parti Bilet Sistemi</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- SVG tabanlı QR kod oluşturucu -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script>
+    // QR kod yardımcı fonksiyonu
+    function generateQRCodeSVG(text, size = 200) {
+      // QR kod oluştur
+      var typeNumber = 0;
+      var errorCorrectionLevel = 'L';
+      var qr = qrcode(typeNumber, errorCorrectionLevel);
+      qr.addData(text);
+      qr.make();
+      
+      // SVG olarak al
+      return qr.createSvgTag(size / qr.getModuleCount(), 0);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Parti Bilet Sistemi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="create.html">Bilet Oluştur</a></li>
+        <li><a href="scan.html">Bilet Tara</a></li>
+        <li><a href="admin.html">Admin Paneli</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ticket-creator">
+      <h2>Yeni Bilet Oluştur</h2>
+      <form id="ticket-form">
+        <div class="form-group">
+          <label for="name">Ad Soyad:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-posta:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit" class="btn">Bilet Oluştur</button>
+      </form>
+
+      <div id="ticket-result" class="hidden">
+        <h3>Bilet Oluşturuldu</h3>
+        <div id="qrcode"></div>
+        <p id="ticket-info"></p>
+        <button id="download-ticket" class="btn">Bileti İndir</button>
+        <button id="print-ticket" class="btn">Bileti Yazdır</button>
+        <button id="create-new" class="btn">Yeni Bilet Oluştur</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Parti Bilet Sistemi. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="js/create.js"></script>
+</body>
+</html> 

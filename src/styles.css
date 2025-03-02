@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .rounded-button {
+    @apply rounded-xl;
+  }
+
+  /* Style for buttons that need important flag */
+  button.rounded-button,
+  a.rounded-button {
+    border-radius: 0.75rem !important;
+  }
+} 

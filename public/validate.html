@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilet Doğrulama - Parti Bilet Sistemi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .validation-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+    .processing { color: #f39c12; font-size: 36px; }
+    .success { color: #2ecc71; font-size: 36px; }
+    .error { color: #e74c3c; font-size: 36px; }
+    .status-icon { text-align: center; margin-bottom: 15px; }
+    .ticket-details { border-top: 1px solid #eee; margin-top: 20px; padding-top: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Parti Bilet Sistemi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="create.html">Bilet Oluştur</a></li>
+        <li><a href="scan.html">Bilet Tara</a></li>
+        <li><a href="admin.html">Admin Paneli</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="validation-container">
+      <div id="validation-result">
+        <div class="status-icon">
+          <span id="status-icon" class="processing">⏳</span>
+        </div>
+        <h2 id="result-title">Bilet Doğrulanıyor...</h2>
+        <p id="result-message">Lütfen bekleyin, bilet kontrol ediliyor.</p>
+        
+        <div id="ticket-details" class="ticket-details hidden">
+          <h3>Bilet Bilgileri</h3>
+          <p><strong>Ad Soyad:</strong> <span id="name"></span></p>
+          <p><strong>E-posta:</strong> <span id="email"></span></p>
+          <p><strong>Bilet ID:</strong> <span id="ticketId"></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Parti Bilet Sistemi. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="js/validate.js"></script>
+</body>
+</html> 

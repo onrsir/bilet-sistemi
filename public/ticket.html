@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilet Görüntüle - Konser-Parti Bilet Sistemi</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- QR Code Generator -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+  <script>
+    // Make QR code generator function globally available
+    window.generateQRCodeSVG = function(text, size = 200) {
+      var typeNumber = 0;
+      var errorCorrectionLevel = 'L';
+      var qr = qrcode(typeNumber, errorCorrectionLevel);
+      qr.addData(text);
+      qr.make();
+      
+      return qr.createSvgTag(size / qr.getModuleCount(), 0);
+    };
+  </script>
+</head>
+<body>
+  <div id="react-app"></div>
+  
+  <script src="/js/ticket.bundle.js"></script>
+</body>
+</html> 

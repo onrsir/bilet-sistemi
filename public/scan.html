@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilet Tara - Parti Bilet Sistemi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body>
+  <header>
+    <h1>Parti Bilet Sistemi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="create.html">Bilet Oluştur</a></li>
+        <li><a href="scan.html">Bilet Tara</a></li>
+        <li><a href="admin.html">Admin Paneli</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="ticket-scanner">
+      <h2>Bilet Tara</h2>
+      <div id="reader"></div>
+      <div id="result" class="hidden">
+        <div id="status-icon"></div>
+        <h3 id="result-title"></h3>
+        <p id="result-message"></p>
+        <div id="ticket-details" class="hidden">
+          <p><strong>Ad Soyad:</strong> <span id="name"></span></p>
+          <p><strong>E-posta:</strong> <span id="email"></span></p>
+          <p><strong>Bilet ID:</strong> <span id="ticketId"></span></p>
+        </div>
+        <button id="scan-another" class="btn">Başka Bir Bilet Tara</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Parti Bilet Sistemi. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <script src="js/scan.js"></script>
+</body>
+</html> 
