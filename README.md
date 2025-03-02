@@ -7,19 +7,19 @@ Bu proje, Konser-Parti Bilet Sistemi için modern bir arayüz eklemek üzere gü
 ## Ekran Görüntüleri
 
 ### Ana Sayfa
-![Ana Sayfa] <img width="891" alt="Ekran Resmi 2025-03-02 14 08 22" src="https://github.com/user-attachments/assets/abbed3ac-ffcf-42c8-b6a2-5d3069c741cc" />
+<img width="891" alt="Ekran Resmi 2025-03-02 14 08 22" src="https://github.com/user-attachments/assets/abbed3ac-ffcf-42c8-b6a2-5d3069c741cc" />
 
 ### Bilet Görüntüleme
-![Bilet Görüntüleme]<img width="232" alt="Ekran Resmi 2025-03-02 14 10 55" src="https://github.com/user-attachments/assets/a8c2ee7a-736b-4ee7-98d0-7e1e3300fcd3" />
+]<img width="232" alt="Ekran Resmi 2025-03-02 14 10 55" src="https://github.com/user-attachments/assets/a8c2ee7a-736b-4ee7-98d0-7e1e3300fcd3" />
 
 
 
 ### Admin Paneli
-![Admin Paneli] <img width="894" alt="Ekran Resmi 2025-03-02 14 09 46" src="https://github.com/user-attachments/assets/42ce9ca3-0c92-4bfe-9184-88d8d18a8445" />
+<img width="894" alt="Ekran Resmi 2025-03-02 14 09 46" src="https://github.com/user-attachments/assets/42ce9ca3-0c92-4bfe-9184-88d8d18a8445" />
 
 
 ### Bilet Oluşturma
-![Bilet Oluşturma] <img width="1377" alt="Ekran Resmi 2025-03-02 14 11 48" src="https://github.com/user-attachments/assets/2a14ef49-ddee-4f55-bed0-7b9e228735fd" />
+<img width="1377" alt="Ekran Resmi 2025-03-02 14 11 48" src="https://github.com/user-attachments/assets/2a14ef49-ddee-4f55-bed0-7b9e228735fd" />
 
 ## Özellikler
 
