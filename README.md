@@ -81,7 +81,7 @@ Ana sayfa, sistem hakkında genel bilgiler ve istatistikler sunar. Bu sayfadan:
 ### Bilet Tarama
 
 1. Ana sayfada "Taramaya Başla" düğmesine tıklayın
-2. QR kod tarayıcı açılacaktır (not: gerçek kamera erişimi için ek yapılandırma gerekebilir)
+2. QR kod tarayıcı açılacaktır (not: gerçek kamera erişimi için uygulamayı deploy etmeniz gerekmektedir.)
 
 ### Bilet Görüntüleme
 
